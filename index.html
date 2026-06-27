@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milkart — Молочные изделия из Туркестана</title>
+  <meta name="description" content="Компания Milkart основана в 2024 году в городе Туркестан. Первая в своем роде высокотехнологичная компания по производству молока и молочных изделий.">
+  <link rel="stylesheet" href="index.css?v=8">
+
+  <!-- Prevent scroll restoration & jumps on F5 — must run BEFORE body parses -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    // Forcibly anchor to top before any other JS or layout pass
+    window.addEventListener('beforeunload', () => window.scrollTo(0, 0));
+  </script>
+
+  <!-- SEO Open Graph -->
+  <meta property="og:title" content="Milkart — Молочные изделия из Туркестана">
+  <meta property="og:description" content="Высокотехнологичное производство молочных изделий в Туркестане. Наша цель — снабдить весь мир качественным молоком.">
+  <meta property="og:image" content="fm_logo.png">
+  <meta property="og:type" content="website">
+  
+  <!-- FontAwesome Icons for Contacts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Handwritten Cyrillic font for the goal phrase (used on KZ) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<body data-lang="ru">
+
+
+
+  <!-- ---------------------------------------------------- -->
+  <!-- HEADER & MINIBAR NAVIGATION                          -->
+  <!-- ---------------------------------------------------- -->
+  <header>
+    <div class="minibar" id="main-minibar">
+      <!-- Brand Logo / Name -->
+      <a href="#hero" class="minibar-brand" id="brand-link">
+        <div class="minibar-logo-placeholder" id="minibar-logo-placeholder">
+          <img src="fm_logo.png" alt="Milkart Logo" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <span class="nav-link" id="nav-about">
+              О нас <i class="fa-solid fa-chevron-down chevron"></i>
+            </span>
+            <div class="dropdown-menu">
+              <a href="goal.html" class="dropdown-item" id="dropdown-goal">Наша цель</a>
+              <a href="history.html" class="dropdown-item" id="dropdown-history">Наша история</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="catalog.html" class="nav-link" id="nav-catalog">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link scroll-trigger" id="nav-contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher: sliding pill -->
+      <div class="lang-switcher" id="lang-switcher" data-lang="ru" role="button" aria-label="Toggle language">
+        <span class="lang-btn" id="btn-kz">kz</span>
+        <span class="lang-btn active" id="btn-ru">ru</span>
+        <div class="lang-slider"></div>
+      </div>
+
+      <!-- Hamburger button for mobile devices -->
+      <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- HERO SECTION — PRODUCT SHOWCASE                      -->
+  <!-- ---------------------------------------------------- -->
+  <section class="hero product-hero" id="hero">
+    <!-- Decorative scattered elements -->
+    <img src="zhivoi-glassLeft.png" alt="" class="deco deco-glass-left" aria-hidden="true">
+    <img src="zhivoi-straws-right.png" alt="" class="deco deco-straws-tr" aria-hidden="true">
+    <img src="zhivoi-straws-left.png" alt="" class="deco deco-straws-bl" aria-hidden="true">
+    <img src="zhivoi-glass-right.png" alt="" class="deco deco-glass-right" aria-hidden="true">
+
+    <div class="product-hero-inner">
+      <div class="product-image-wrap">
+        <img src="product.png" alt="Milkart product" class="product-image" id="product-image">
+      </div>
+      <div class="product-info">
+        <h1 class="product-title" id="product-title">Milkart<br>Yo-Go</h1>
+        <p class="product-desc" id="product-desc">Питьевой живой йогурт от Milkart на каждый день.</p>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span class="scroll-indicator-text" id="scroll-indicator-text">Листай вниз</span>
+      <div class="scroll-indicator-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- PROMO BLOCK 1: HISTORY                               -->
+  <!-- ---------------------------------------------------- -->
+  <section class="history-block" id="promo-history">
+    <!-- White card sticking out from bottom-left -->
+    <div class="hero-card">
+      <h2 class="hero-card-title" id="hero-card-title">Творим историю</h2>
+      <p class="hero-card-desc" id="hero-card-desc">Несколько лет назад одна компания поставила цель снабдить весь Туркестан качественной молочной продукцией.</p>
+      <a href="history.html" class="hero-card-btn" id="hero-card-btn">Узнать историю <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- GOALS BLOCK                                           -->
+  <!-- ---------------------------------------------------- -->
+  <section class="goals-section">
+    <div class="goals-container">
+      <h2 class="goals-title">Наши цели</h2>
+      <p class="goals-subtitle">Мы никогда не стоим на месте и находимся в постоянном развитии. Узнайте, какие большие цели мы ставим перед собой и что делаем для их достижения.</p>
+      <div class="goals-brand" aria-hidden="true">
+        <span class="goals-brand-text">Milkart</span>
+      </div>
+      <a href="goal.html" class="goals-btn">Узнать подробнее <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- FOOTER & CONTACTS SECTION                            -->
+  <!-- ---------------------------------------------------- -->
+  <section class="footer-section" id="footer">
+    <div class="promo-bg">
+      <img src="footer_bg.png" alt="Turkestan city at twilight" loading="lazy">
+    </div>
+    <div class="footer-overlay"></div>
+    
+    <div class="footer-content">
+      
+      <!-- Brand column -->
+      <div class="footer-brand-column">
+        <div class="footer-logo">
+          <img src="fm_logo.png" alt="Milkart Logo">
+        </div>
+        <div class="footer-meta">
+          <span style="font-size: 1.5rem; font-weight: 700;">Est. 2024</span>
+          <span>•</span>
+          <img src="turkistan_logo.png" alt="Туркестан" class="turkistan-logo" style="height: 150px; width: auto; vertical-align: middle;">
+          <span id="meta-location" style="display: none;">Туркестан, Казахстан</span>
+        </div>
+      </div>
+
+      <!-- Information grid -->
+      <div class="footer-info-grid">
+        <!-- Contact Info Grid -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+          <h3 id="card-contacts-title">Контакты</h3>
+          <p>
+            <a href="tel:+77012228284"><i class="fa-solid fa-phone" style="margin-right: 0.5rem;"></i> +7 701 222 8284</a><br>
+            <a href="mailto:milkart.kz@mail.ru"><i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i> milkart.kz@mail.ru</a><br>
+            <a href="https://instagram.com/milkart.kz" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" style="margin-right: 0.5rem;"></i> @milkart.kz</a>
+          </p>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 id="card-location-title">Локация</h3>
+          <p id="card-location-desc">г. Туркестан, улица Ш. Ниязова 34</p>
+        </div>
+
+        <!-- Copyright bar -->
+        <div class="copyright-bar">
+          <p>&copy; <span id="copyright-year">2026</span> Milkart.<br> <span id="copyright-text">Все права защищены.</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- JAVASCRIPT LOGIC                                     -->
+  <!-- ---------------------------------------------------- -->
+  <script>
+    // Ensure we start at top on parse (in addition to head-script guard)
+    window.scrollTo(0, 0);
+
+    // ----------------------------------------------------
+    // LANGUAGE SWITCHER — redirects to KZ version
+    // ----------------------------------------------------
+    const langSwitcher = document.getElementById('lang-switcher');
+    langSwitcher.addEventListener('click', () => {
+      window.location.href = 'index-kz.html';
+    });
+
+    // ----------------------------------------------------
+    // MOBILE MENU & RESPONSIVE BEHAVIOR
+    // ----------------------------------------------------
+    const hamburger = document.getElementById('hamburger-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const navAbout = document.getElementById('nav-about');
+    const navItemAbout = navAbout.closest('.nav-item');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+    });
+
+    // Close menu when clicking nav links (except About which opens dropdown)
+    const navLinks = document.querySelectorAll('.nav-menu .scroll-trigger');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+      });
+    });
+
+    // Toggle about dropdown on mobile tap
+    navAbout.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        navItemAbout.classList.toggle('open');
+      }
+    });
+
+    // Handle scroll trigger click for smooth scroll-snapping integration
+    const scrollTriggers = document.querySelectorAll('.scroll-trigger');
+    scrollTriggers.forEach(trigger => {
+      trigger.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        
+        // Prevent default only if we stay on same page
+        if (targetId.startsWith('#')) {
+          e.preventDefault();
+          const targetSection = document.querySelector(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
+
+          // Special highlight for card tags if clicked from dropdown
+          const targetTab = this.getAttribute('data-target-tab');
+          if (targetTab) {
+            const cardElement = document.getElementById(`card-${targetTab}`);
+            if (cardElement) {
+              // Highlight cards temporarily
+              cardElement.style.borderColor = 'var(--text-accent)';
+              cardElement.style.boxShadow = '0 15px 40px rgba(96, 165, 250, 0.2)';
+              setTimeout(() => {
+                cardElement.style.borderColor = '';
+                cardElement.style.boxShadow = '';
+              }, 2000);
+            }
+          }
+        }
+      });
+    });
+
+    // Set Copyright Year
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    // ----------------------------------------------------
+    // SCROLL INDICATOR — hide on scroll, click to scroll
+    // ----------------------------------------------------
+    const scrollIndicator = document.getElementById('scroll-indicator');
+    
+    scrollIndicator.addEventListener('click', () => {
+      const target = document.getElementById('promo-history');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    // Hide scroll indicator when past hero
+    window.addEventListener('scroll', () => {
+      const heroSection = document.getElementById('hero');
+      const rect = heroSection.getBoundingClientRect();
+      if (rect.bottom < 0) {
+        scrollIndicator.style.opacity = '0';
+        scrollIndicator.style.pointerEvents = 'none';
+      } else {
+        scrollIndicator.style.opacity = '';
+        scrollIndicator.style.pointerEvents = '';
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      window.scrollTo(0, 0);
+    });
+
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+  </script>
+</body>
+</html>

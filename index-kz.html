@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milkart — Түркістаннан сүт өнімдері</title>
+  <meta name="description" content="Milkart компаниясы 2024 жылы Түркістан қаласында негізі қаланды. Сүт және сүт өнімдерін өндіретін өз саласындағы алғашқы жоғары технологиялық компания.">
+  <link rel="stylesheet" href="index.css?v=8">
+
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.addEventListener('beforeunload', () => window.scrollTo(0, 0));
+  </script>
+
+  <meta property="og:title" content="Milkart — Түркістаннан сүт өнімдері">
+  <meta property="og:description" content="Түркістандағы жоғары технологиялық сүт өнімдерін өндіру. Мақсатымыз — бүкіл әлемді сапалы сүтпен қамтамасыз ету.">
+  <meta property="og:image" content="fm_logo.png">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Handwritten Cyrillic font for the goal phrase -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body data-lang="kz">
+
+  <header>
+    <div class="minibar" id="main-minibar">
+      <a href="#hero" class="minibar-brand" id="brand-link">
+        <div class="minibar-logo-placeholder" id="minibar-logo-placeholder">
+          <img src="fm_logo.png" alt="Milkart Logo" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <span class="nav-link" id="nav-about">
+              Біз туралы <i class="fa-solid fa-chevron-down chevron"></i>
+            </span>
+            <div class="dropdown-menu">
+              <a href="goal-kz.html" class="dropdown-item">Біздің мақсатымыз</a>
+              <a href="history-kz.html" class="dropdown-item">Біздің тарихымыз</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="catalog.html" class="nav-link">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link scroll-trigger">Байланыс</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lang-switcher" id="lang-switcher" data-lang="kz" role="button" aria-label="Toggle language">
+        <span class="lang-btn active" id="btn-kz">kz</span>
+        <span class="lang-btn" id="btn-ru">ru</span>
+        <div class="lang-slider"></div>
+      </div>
+
+      <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero product-hero" id="hero">
+    <img src="zhivoi-glassLeft.png" alt="" class="deco deco-glass-left" aria-hidden="true">
+    <img src="zhivoi-straws-right.png" alt="" class="deco deco-straws-tr" aria-hidden="true">
+    <img src="zhivoi-straws-left.png" alt="" class="deco deco-straws-bl" aria-hidden="true">
+    <img src="zhivoi-glass-right.png" alt="" class="deco deco-glass-right" aria-hidden="true">
+
+    <div class="product-hero-inner">
+      <div class="product-image-wrap">
+        <img src="product.png" alt="Milkart product" class="product-image">
+      </div>
+      <div class="product-info">
+        <h1 class="product-title">Milkart<br>Yo-Go</h1>
+        <p class="product-desc">Milkart-тың күнделікті ішуге арналған тірі йогурты.</p>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span class="scroll-indicator-text">Төмен сырғыт</span>
+      <div class="scroll-indicator-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="history-block" id="promo-history">
+    <div class="hero-card">
+      <h2 class="hero-card-title">Тарихты жазуымыз</h2>
+      <p class="hero-card-desc">Бірнеше жыл бұрын шағын компания үлкен мақсат қойды — бүкіл Түркістанды жоғары сапалы сүт өнімдерімен қамтамасыз ету.</p>
+      <a href="history-kz.html" class="hero-card-btn">Тарихты білу <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------- -->
+  <!-- GOALS BLOCK                                           -->
+  <!-- ---------------------------------------------------- -->
+  <section class="goals-section">
+    <div class="goals-container">
+      <h2 class="goals-title">Біздің мақсаттарымыз</h2>
+      <p class="goals-subtitle">Біз ешқашан орнымыздан қозғалмай, үнемі даму үстіндеміз. Біздің алдымызға қойған ірі мақсаттарымызды және оларға жету үшін не істейтінімізді біліңіз.</p>
+      <div class="goals-brand" aria-hidden="true">
+        <span class="goals-brand-text">Milkart</span>
+      </div>
+      <a href="goal-kz.html" class="goals-btn">Толығырақ <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <section class="footer-section" id="footer">
+    <div class="promo-bg">
+      <img src="footer_bg.png" alt="Turkestan city at twilight" loading="lazy">
+    </div>
+    <div class="footer-overlay"></div>
+
+    <div class="footer-content">
+      <div class="footer-brand-column">
+        <div class="footer-logo">
+          <img src="fm_logo.png" alt="Milkart Logo">
+        </div>
+        <div class="footer-meta">
+          <span style="font-size: 1.5rem; font-weight: 700;">Est. 2024</span>
+          <span>•</span>
+          <img src="turkistan_logo.png" alt="Түркістан" class="turkistan-logo" style="height: 150px; width: auto; vertical-align: middle;">
+        </div>
+      </div>
+
+      <div class="footer-info-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+          <h3>Байланыс</h3>
+          <p>
+            <a href="tel:+77012228284"><i class="fa-solid fa-phone" style="margin-right: 0.5rem;"></i> +7 701 222 8284</a><br>
+            <a href="mailto:milkart.kz@mail.ru"><i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i> milkart.kz@mail.ru</a><br>
+            <a href="https://instagram.com/milkart.kz" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" style="margin-right: 0.5rem;"></i> @milkart.kz</a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3>Мекен-жайы</h3>
+          <p>Түркістан қ., Ш. Ниязов көшесі 34</p>
+        </div>
+
+        <div class="copyright-bar">
+          <p>&copy; <span id="copyright-year">2026</span> Milkart.<br> Барлық құқықтар қорғалған.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    window.scrollTo(0, 0);
+
+    // Language switcher — redirect to RU version
+    document.getElementById('lang-switcher').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const navAbout = document.getElementById('nav-about');
+    const navItemAbout = navAbout.closest('.nav-item');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-menu .scroll-trigger').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+      });
+    });
+
+    navAbout.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        navItemAbout.classList.toggle('open');
+      }
+    });
+
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('.scroll-trigger').forEach(trigger => {
+      trigger.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId.startsWith('#')) {
+          e.preventDefault();
+          const targetSection = document.querySelector(targetId);
+          if (targetSection) targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    // Hide scroll indicator past hero
+    const scrollIndicator = document.getElementById('scroll-indicator');
+    scrollIndicator.addEventListener('click', () => {
+      const target = document.getElementById('promo-history');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    window.addEventListener('scroll', () => {
+      const heroSection = document.getElementById('hero');
+      const rect = heroSection.getBoundingClientRect();
+      if (rect.bottom < 0) {
+        scrollIndicator.style.opacity = '0';
+        scrollIndicator.style.pointerEvents = 'none';
+      } else {
+        scrollIndicator.style.opacity = '';
+        scrollIndicator.style.pointerEvents = '';
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      window.scrollTo(0, 0);
+    });
+  </script>
+</body>
+</html>
