@@ -1,290 +1,118 @@
-<!DOCTYPE html>
-<html lang="ru" class="subpage">
+<!doctype html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Наша цель — Milkart</title>
-  <meta name="description" content="Узнайте подробнее о глобальной и региональной миссии компании Milkart по производству молочных изделий в Туркестане.">
-  <link rel="stylesheet" href="index.css">
-
-  <!-- SEO Open Graph -->
-  <meta property="og:title" content="Наша цель — Milkart">
-  <meta property="og:description" content="Узнайте подробнее о глобальной и региональной миссии компании Milkart по производству молочных изделий в Туркестане.">
-  <meta property="og:image" content="fm_logo.png">
-  <meta property="og:type" content="website">
-
-  <!-- FontAwesome Icons for Contacts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Наши цели | Milkart</title>
+  <meta name="description" content="Цели Milkart: лидерство в живых йогуртах и турецком айране, выход на рынок всего Казахстана и доступное качество.">
+  <link rel="canonical" href="https://milkart.kz/goal.html">
+  <link rel="alternate" hreflang="ru" href="https://milkart.kz/goal.html">
+  <link rel="alternate" hreflang="kk" href="https://milkart.kz/goal-kz.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Milkart">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Наши цели | Milkart">
+  <meta property="og:description" content="От Туркестана к полкам каждого города Казахстана.">
+  <meta property="og:url" content="https://milkart.kz/goal.html">
+  <meta property="og:image" content="https://milkart.kz/goal_steppe.png">
+  <meta name="theme-color" content="#075b3a">
+  <link rel="icon" href="fm_logo.png" type="image/png">
+  <link rel="stylesheet" href="sections.css?v=20260711">
 </head>
-<body data-lang="ru">
-
-  <!-- ---------------------------------------------------- -->
-  <!-- HEADER & MINIBAR NAVIGATION                          -->
-  <!-- ---------------------------------------------------- -->
-  <header>
-    <div class="minibar" id="main-minibar">
-      <!-- Brand Logo / Name -->
-      <a href="index.html#hero" class="minibar-brand" id="brand-link">
-        <div class="minibar-logo-placeholder" id="minibar-logo-placeholder">
-          <img src="fm_logo.png" alt="Milkart Logo" style="width: 100%; height: 100%; object-fit: contain;">
-        </div>
-      </a>
-
-      <!-- Navigation Menu -->
-      <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item">
-            <span class="nav-link" id="nav-about">
-              О нас <i class="fa-solid fa-chevron-down chevron"></i>
-            </span>
-            <div class="dropdown-menu">
-              <a href="goal.html" class="dropdown-item" id="dropdown-goal">Наша цель</a>
-              <a href="history.html" class="dropdown-item" id="dropdown-history">Наша история</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="catalog.html" class="nav-link" id="nav-catalog">Каталог</a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#footer" class="nav-link" id="nav-contacts">Контакты</a>
-          </li>
+<body>
+  <a class="skip-link" href="#main">К основному содержанию</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Milkart, главная"><img src="fm_logo.png" width="260" height="109" alt="Milkart"></a>
+      <nav class="site-nav" data-site-nav aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="catalog.html">Продукты</a></li>
+          <li><a class="nav-link" href="history.html">История</a></li>
+          <li><a class="nav-link" href="goal.html" aria-current="page">Цели</a></li>
+          <li><a class="nav-link" href="#contacts">Контакты</a></li>
+          <li class="mobile-language"><a class="nav-link" href="goal-kz.html" lang="kk">Қазақша</a></li>
         </ul>
       </nav>
-
-      <!-- Language Switcher: sliding pill -->
-      <div class="lang-switcher" id="lang-switcher" data-lang="ru" role="button" aria-label="Toggle language">
-        <span class="lang-btn" id="btn-kz">kz</span>
-        <span class="lang-btn active" id="btn-ru">ru</span>
-        <div class="lang-slider"></div>
-      </div>
-
-      <!-- Hamburger button for mobile devices -->
-      <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="language" aria-label="Выбор языка"><a class="lang-link" href="goal-kz.html" lang="kk">KZ</a><a class="lang-link" href="goal.html" lang="ru" aria-current="page">RU</a></div>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- ---------------------------------------------------- -->
-  <!-- HERO BANNER                                          -->
-  <!-- ---------------------------------------------------- -->
-  <section class="subpage-hero">
-    <div class="subpage-hero-bg">
-      <img src="promo_goals.png" alt="Kazakhstan pastures" loading="lazy">
-    </div>
-    <div class="subpage-hero-overlay"></div>
-    <div class="subpage-hero-content">
-      <div class="subpage-hero-label" id="page-label">О нас</div>
-      <h1 class="subpage-title" id="page-title">Наша цель</h1>
-      <p class="subpage-subtitle" id="page-subtitle">Путь от древних традиций Туркестана к мировым стандартам качества</p>
-    </div>
-  </section>
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero-media"><img src="goal_steppe.png" alt="Широкий зелёный горизонт Казахстана" fetchpriority="high"></div>
+      <div class="container page-hero-content">
+        <h1 class="display page-hero-title">От Туркестана ко всей стране.</h1>
+        <p class="page-hero-copy">У нас есть конкретные цели. Мы идём к ним каждый день и измеряем путь реальными городами, продуктами и людьми.</p>
+      </div>
+    </section>
 
-  <!-- ---------------------------------------------------- -->
-  <!-- MAIN CONTENT CONTAINER                               -->
-  <!-- ---------------------------------------------------- -->
-  <main class="subpage-container">
-    <div class="subpage-card" id="content-card">
+    <div class="goals-wrap">
+      <div class="container">
+        <section class="goal-intro reveal">
+          <h2 class="display section-title">Мы строим бренд национального масштаба.</h2>
+          <p>Мы не просто производим молочную продукцию. Мы хотим, чтобы Milkart знали от Туркестана до каждого уголка Казахстана.</p>
+        </section>
 
-      <!-- Section 1 -->
-      <div class="subpage-section alternating-row reveal reveal-delay-1">
-        <div class="subpage-text-col reveal-left">
-          <h2 class="subpage-section-title" id="section1-title">С чего всё началось — тепло родной земли</h2>
-          <p class="subpage-para" id="section1-para1">
-            Когда мы только задумывали Milkart в 2024 году, мы не строили грандиозных бизнес-планов с красивыми терминами вроде «миссия» или «инновационная стратегия». Мы просто сидели вечером в Туркестане, пили чай и поняли одну простую вещь: в нашем родном городе, духовном центре всей степи, стало сложно найти простое, честное молоко для детей. Такое, какое давали нам наши бабушки в детстве — густое, пахнущее травой предгорий Каратау, без химии и сухого порошка.
-          </p>
-          <p class="subpage-para" id="section1-para2">
-            С этого простого желания дать своим семьям лучшее и началась наша история. Мы решили соединить теплоту степного гостеприимства с современными технологиями, чтобы сохранить каждую каплю этой пользы. Для нас это не просто бизнес, а способ сохранить традиции нашей земли и поделиться ими с каждым из вас.
-          </p>
-        </div>
-        <div class="subpage-image-col reveal-right">
-          <div class="subpage-image-wrap">
-            <img src="goal_heritage.png" alt="Уютная кухня с видом на мавзолей Ходжи Ахмеда Ясави в Туркестане" loading="lazy">
+        <section class="goal-panel goal-product reveal">
+          <div class="goal-panel-copy">
+            <h2 class="display">Стать лидером в йогуртах и айране.</h2>
+            <p>Мы начали с трёх вкусов, сегодня их восемь. Линейка YoGo продолжает расти. Цель: бренд номер один в категории живых йогуртов и турецкого айрана по всей стране.</p>
           </div>
-        </div>
-      </div>
-
-      <div class="section-divider reveal"></div>
-
-      <!-- Section 2 -->
-      <div class="subpage-section alternating-row row-reverse reveal reveal-delay-1">
-        <div class="subpage-text-col reveal-right">
-          <h2 class="subpage-section-title" id="section2-title">Наш первый шаг — Туркестан</h2>
-          <p class="subpage-para" id="section2-para1">
-            Мы начали с малого, но самого важного: дать честный продукт каждой семье в Туркестане и нашей области. Для нас это не просто рынок сбыта, это наш дом. Поэтому мы работаем напрямую с местными небольшими фермами. Мы не везем молоко издалека, консервируя его по дороге — наши машины доставляют свежее сырье на завод каждое утро.
-          </p>
-          <p class="subpage-para" id="section2-para2">
-            Мы наладили процесс так, чтобы молоко попадало на прилавки уже через несколько часов после дойки. Мы создаем рабочие места для своих соседей, платим честную цену фермерам и хотим, чтобы каждая бутылка Milkart на вашем семейном столе несла радость и здоровье. Мы верим, что доверие соседей — это лучшая награда за наш труд.
-          </p>
-        </div>
-        <div class="subpage-image-col reveal-left">
-          <div class="subpage-image-wrap">
-            <img src="goal_farm.png" alt="Современная экологичная ферма Milkart на рассвете" loading="lazy">
+          <div class="goal-product-visual" aria-label="Продукты Milkart">
+            <img src="product/yogo-banana.png" alt="YoGo банан" loading="lazy">
+            <img src="product.png" alt="YoGo клубника" loading="lazy">
+            <img src="product/tur-ayran-0,45.png" alt="Турецкий айран Milkart" loading="lazy">
           </div>
-        </div>
-      </div>
+        </section>
 
-      <div class="section-divider reveal"></div>
-
-      <!-- Section 3 -->
-      <div class="subpage-section alternating-row reveal reveal-delay-1">
-        <div class="subpage-text-col reveal-left">
-          <h2 class="subpage-section-title" id="section3-title">Для всего Казахстана</h2>
-          <p class="subpage-para" id="section3-para1">
-            Конечно, мы мечтаем о том, чтобы вкус нашего молока узнали во всех уголках Казахстана. Но мы хотим расти не ради красивых цифр в финансовых отчетах, а ради здоровья людей. Мы верим, что казахстанцы заслуживают пить качественные отечественные продукты, которые сделаны честно и с душой.
-          </p>
-          <p class="subpage-para" id="section3-para2">
-            Наша цель — привезти частичку туркестанского солнца и чистоты степного воздуха в Алматы, Астану, Актау и каждый другой город нашей страны. Мы хотим доказать, что наш местный казахстанский бренд может быть не хуже любого импортного продукта, а даже лучше — потому что за ним стоят настоящие люди и настоящая земля.
-          </p>
-        </div>
-        <div class="subpage-image-col reveal-right">
-          <div class="subpage-image-wrap">
-            <img src="goal_steppe.png" alt="Зеленая степь у подножия гор Каратау" loading="lazy">
+        <section class="goal-panel goal-geography">
+          <div class="goal-panel-copy reveal">
+            <h2 class="display">Выйти на рынок всего Казахстана.</h2>
+            <p>Туркестан был стартом. Кентау и Кызылорда уже стали реальностью. Шымкент и сеть Magnum стоят на пороге. Дальше Алматы, Астана и вся страна.</p>
           </div>
-        </div>
-      </div>
+          <ol class="map-route reveal">
+            <li><strong>Сейчас</strong><span>Туркестан, Кентау, Кызылорда</span></li>
+            <li><strong>Далее</strong><span>Шымкент</span></li>
+            <li><strong>Следом</strong><span>Алматы и Астана</span></li>
+            <li><strong>Цель</strong><span>Каждый город Казахстана</span></li>
+          </ol>
+        </section>
 
-      <div class="section-divider reveal"></div>
-
-      <!-- Section 4 -->
-      <div class="subpage-section alternating-row row-reverse reveal reveal-delay-1">
-        <div class="subpage-text-col reveal-right">
-          <h2 class="subpage-section-title" id="section4-title">Вкус Великой Степи для всего мира</h2>
-          <p class="subpage-para" id="section4-para1">
-            Мы верим, что у нашего молока есть душа. Уникальный климат юга, солнечные лучи и целебные травы предгорий Каратау — всё это делает вкус нашего молока неповторимым. И мы мечтаем поделиться этим вкусом со всем миром.
-          </p>
-          <p class="subpage-para" id="section4-para2">
-            В наших планах — экспорт в соседние страны и дальше. Мы хотим, чтобы когда люди в Китае, Азии или Европе покупали молоко Milkart, они знали: это продукт из самого сердца Казахстана, сделанный чистыми руками и открытым сердцем. Мы представляем нашу страну не громкими словами, а качеством нашей работы.
-          </p>
-        </div>
-        <div class="subpage-image-col reveal-left">
-          <div class="subpage-image-wrap">
-            <img src="goal_steppe.png" alt="Бескрайние просторы казахской степи" loading="lazy">
+        <section class="goal-panel goal-coffee reveal">
+          <img src="goal_heritage.png" alt="Чашка с кофейными зёрнами на тёмном фоне" loading="lazy">
+          <div class="goal-panel-copy">
+            <h2 class="display">Новые продукты. Новые горизонты.</h2>
+            <p>Уже сейчас готовится новая кофейная серия с несколькими вкусами. Детали пока останутся в секрете, но это будет особенный запуск.</p>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <div class="section-divider reveal"></div>
-
-      <!-- Section 5 - Philosophy -->
-      <div class="subpage-section philosophy-highlight reveal">
-        <h2 class="subpage-section-title" id="section5-title">Наша философия — жить в гармонии с природой</h2>
-        <p class="subpage-para" id="section5-para1">
-          Мы против увеличения объёмов производства любой ценой. Земля Туркестана кормит нас, и мы обязаны заботиться о ней в ответ. Мы стараемся экономить воду, сокращать отходы и использовать упаковку, которая легко перерабатывается и не загрязняет нашу степь.
-        </p>
-        <p class="subpage-para" id="section5-para2">
-          Наше отношение к коровам тоже особенное — мы работаем только с теми фермерами, которые любят своих животных, держат их на свободном выпасе, кормят натуральными травами и не используют гормоны. Мы верим: счастливая корова даёт самое вкусное и полезное молоко. Это простая истина, которой мы следуем каждый день.
-        </p>
-      </div>
-
-      <!-- Navigation back home -->
-      <div class="back-btn-container">
-        <a href="index.html#hero" class="back-home-btn" id="back-home-btn">
-          <i class="fa-solid fa-arrow-left"></i> <span id="back-home-text">На главную</span>
-        </a>
+        <section class="goal-panel goal-everyone">
+          <figure class="media-frame reveal"><img src="history_family.png" alt="Семья вместе за домашним столом" loading="lazy"></figure>
+          <div class="goal-panel-copy reveal">
+            <h2 class="display">Качество для каждого.</h2>
+            <p>Наша главная цель не изменится: делать продукт, который могут позволить себе все. Для семьи, ресторана и маленького магазина рядом с домом.</p>
+          </div>
+        </section>
       </div>
     </div>
+
+    <section class="closing-statement"><p>Это не просто амбиция. Это план, и мы уже в пути.</p></section>
   </main>
 
-  <!-- ---------------------------------------------------- -->
-  <!-- FOOTER & CONTACTS SECTION                            -->
-  <!-- ---------------------------------------------------- -->
-  <section class="footer-section" id="footer" style="scroll-snap-align: none; height: auto;">
-    <div class="promo-bg">
-      <img src="footer_bg.png" alt="Turkestan city at twilight" loading="lazy">
-    </div>
-    <div class="footer-overlay"></div>
-
-    <div class="footer-content" style="padding-top: 2rem;">
-
-      <!-- Brand column -->
-      <div class="footer-brand-column">
-        <div class="footer-logo">
-          <img src="fm_logo.png" alt="Milkart Logo">
-        </div>
-        <div class="footer-meta">
-          <span>Est. 2024</span>
-          <span>•</span>
-          <img src="turkistan_logo.png" alt="Туркестан" class="turkistan-logo" style="height: 150px; width: auto; vertical-align: middle;">
-          <span id="meta-location" style="display: none;">Туркестан, Казахстан</span>
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="fm_logo.png" width="260" height="109" alt="Milkart"><p>Живые молочные продукты из Туркестана. Сделано с уважением к людям, вкусу и ежедневному выбору семьи.</p></div>
+        <div class="footer-contacts">
+          <div><h2>Связаться</h2><ul class="footer-links"><li><a href="tel:+77012228284">+7 701 222 8284</a></li><li><a href="mailto:milkart.kz@mail.ru">milkart.kz@mail.ru</a></li><li><a href="https://instagram.com/milkart.kz" target="_blank" rel="noopener">Instagram @milkart.kz</a></li></ul></div>
+          <div><h2>Адрес</h2><ul class="footer-links"><li>г. Туркестан</li><li>улица Ш. Ниязова 34</li></ul></div>
         </div>
       </div>
-
-      <!-- Information grid -->
-      <div class="footer-info-grid">
-        <!-- Target tab container 3 (Contacts) -->
-        <div class="contact-card" style="grid-column: span 2;">
-          <div class="contact-icon">
-            <i class="fa-solid fa-paper-plane"></i>
-          </div>
-          <h3 id="card-contacts-title">Контакты</h3>
-          <p>
-            <a href="tel:+77012228284"><i class="fa-solid fa-phone" style="margin-right: 0.5rem;"></i> +7 701 222 8284</a><br>
-            <a href="mailto:milkart.kz@mail.ru"><i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i> milkart.kz@mail.ru</a><br>
-            <a href="https://instagram.com/milkart.kz" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" style="margin-right: 0.5rem;"></i> @milkart.kz</a>
-          </p>
-        </div>
-
-        <!-- Target tab container 4 (Location) -->
-        <div class="contact-card" style="grid-column: span 2;">
-          <div class="contact-icon">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <h3 id="card-location-title">Локация</h3>
-          <p id="card-location-desc">г. Туркестан, улица Ш. Ниязова 34</p>
-        </div>
-
-        <!-- Copyright bar -->
-        <div class="copyright-bar">
-          <p>&copy; <span id="copyright-year">2026</span> Milkart. <span id="copyright-text">Все права защищены.</span></p>
-        </div>
-      </div>
-
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Milkart</span><a href="catalog.html">Смотреть каталог</a></div>
     </div>
-  </section>
-
-  <!-- ---------------------------------------------------- -->
-  <!-- JAVASCRIPT LOGIC                                     -->
-  <!-- ---------------------------------------------------- -->
-  <script>
-    document.getElementById('lang-switcher').addEventListener('click', () => {
-      window.location.href = 'goal-kz.html';
-    });
-
-    const hamburger = document.getElementById('hamburger-menu');
-    const navMenu = document.getElementById('nav-menu');
-    const navAbout = document.getElementById('nav-about');
-    const navItemAbout = navAbout.closest('.nav-item');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navMenu.classList.toggle('open');
-    });
-
-    navAbout.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        navItemAbout.classList.toggle('open');
-      }
-    });
-
-    document.getElementById('copyright-year').textContent = new Date().getFullYear();
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
-      document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
-        observer.observe(el);
-      });
-    });
-  </script>
+  </footer>
+  <script src="sections.js?v=20260711" defer></script>
 </body>
 </html>
+
